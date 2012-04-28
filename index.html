@@ -286,12 +286,31 @@
       </section>
       <section>
         <h2>WOFF</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - XXX
-        -->
+        <section class='informative'>
+          <h3>Overview</h3>
+          <p>
+            <acronym title="Web Open Font Format">WOFF</acronym> is a simple
+            compressed file format for packaging fonts. It addresses the main
+            issues which have slowed rich font adoption on the Web:
+            interoperability (WOFF is the first interoperable format with broad
+            industry adoption), licensing considerations (licensing terms can be
+            attached to the font file as metadata in WOFF), and file size (WOFF
+            uses gzip compression).
+          </p>
+        </section>
+        <section>
+          <h3>Conformance</h3>
+          <p>
+            User agents MUST support [[!WOFF]].
+          </p>
+        </section>
+        <section class='informative'>
+          <h2>Related APIs</h2>
+          <p>
+            Packaged fonts are linked to Web documents by means of the
+            <code>@font-face</code> rule specified in [[CSS3FONT]].
+          </p>
+        </section>
       </section>
     </section>
     <!-- 
