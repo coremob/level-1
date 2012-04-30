@@ -133,13 +133,59 @@
         -->
       </section>
       <section>
-        <h2>Capture API</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - simple
-        -->
+        <h2>HTML Media Capture</h2>
+        <section class='informative'>
+          <h3>Overview</h3>
+          <p>
+            The main use case for camera access on mobile devices is simply… to take
+            pictures. The declarative [[!HTMLMEDIACAPTURE]] API is a perfect fit
+            for this use case.
+          </p>
+          <p>
+            As [[!HTMLMEDIACAPTURE]] relies on the security and privacy
+            protections provided by the [[HTML5]] <code>&lt;input type="file"&gt;</code>
+            and the [[FILE-API]] specifications, there is no need to prompt the user to give access to
+            the camera. Other benefits of this approach allows user agents to save
+            pictures directly to the device's photo gallery if they so wish,
+            add a physical shutter button, or provide photo editing functions
+            such as cropping, filtering, etc.
+          </p>
+          <p>
+            [[!HTMLMEDIACAPTURE]] isn't a replacement for a lower-level API
+            such as [[MEDIACAPTURE-API]] as it doesn't fulfill the same use-cases.
+            Both solutions are complementary.
+          </p>
+          <p class='note'>
+            On mobile devices, the most common use case for [[!HTMLMEDIACAPTURE]]
+            with a <code>capture</code> attribute set to <code>"camera"</code> is to
+            access the device's camera to take a picture. User agents are therefore
+            strongly encouraged to launch the system's camera application in fullscreen
+            mode directly upon activation rather than go through a two step process
+            involving a media capture picker.
+          </p>
+        </section>
+
+        <section class='normative'>
+          <h3>Conformance</h3>
+          <p>
+            User agents MUST support [[!HTMLMEDIACAPTURE]].
+          </p>
+        </section>
+
+        <section class='informative'>
+          <h2>Related APIs</h2>
+          <p>
+            Capturing pictures isn't enough. One might want to store it on the device or
+            (asynchronously) upload it to a remote server. Fully supporting camera
+            access therefore also implies supporting the following:
+          </p>
+          <ul>
+            <li><a href="#file-api">File API</a>, for access to the data returned by the system's camera application,</li>
+            <li><a href="#xmlhttprequest">XMLHttpRequest</a>, for asynchronous multipart uploads,</li>
+            <li><a href="#indexed-database-api">IndexedDB</a>, to store pictures locally, and</li>
+            <li><a href="#web-workers">Web Workers</a>, for background uploads.</li>
+          </ul>
+        </section>
       </section>
       <section>
         <h2>HTML5 Forms</h2>
@@ -151,7 +197,13 @@
         -->
       </section>
       <section>
-        <h2>XMLHttpRequest level 2</h2>
+        <h2>File API</h2>
+        <p>
+          XXX
+        </p>
+      </section>
+      <section>
+        <h2>XMLHttpRequest</h2>
         <p>
           XXX
         </p>
@@ -160,7 +212,7 @@
         -->
       </section>
       <section>
-        <h2>IndexedDB</h2>
+        <h2>Indexed Database API</h2>
         <p>
           XXX
         </p>
@@ -187,7 +239,7 @@
         -->
       </section>
       <section>
-        <h2>Workers</h2>
+        <h2>Web Workers</h2>
         <p>
           XXX
         </p>
