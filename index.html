@@ -27,7 +27,7 @@
       ,   isNoTrack:    true
       };
     </script>
-    <script src='http://respec.specifiction.com/js/profiles/w3c-common.js' class='remove'></script>
+    <script src='http://www.w3.org/Tools/respec/respec-w3c-common' class='remove' async></script>
   </head>
   <body>
     <section id='sotd'>
@@ -59,6 +59,59 @@
         - mention the At Risk principle
       -->
     </section>
+    <section>
+      <h2>Markup</h2>
+      <p>
+        This section describes requirements for markup languages and related features.
+      </p>
+      <section>
+        <h2>HTML5</h2>
+        <p>
+          User agents MUST support HTML5 [[!HTML5]].
+        </p>
+        <p class='issue'>
+          Should we make conformance to the whole spec a requirement or should we break it down and require support for parts of it only?
+        </p>
+        <p class='issue'>
+          HTML5 is currently a Last Call Working Draft. Can we still make it a normative reference?
+        </p>
+      </section>
+      <section>
+        <h2>HTML Media Capture</h2>
+        <p>
+          User agents MUST support HTML Media Capture [[!HTMLMEDIACAPTURE]].
+        </p>
+        <p class='note'>
+          When presented with a <code>capture</code> attribute set to <code>"camera"</code>, <code>"camcorder"</code>, or <code>"microphone"</code> User Agents are urged to invoke a file picker of a specific capture control type rather than of a generic type. E.g. when the <code>capture</code> attribute is <code>"camera"</code>, a mobile phone should let the user take a picture using the device's default camera application in fullscreen mode.
+        </p>
+        <p class='issue'>
+          HTML Media Capture is just a Working Draft at this point.
+        </p>
+        <p class='issue'>
+          The <code>capture</code> attribute is merely a hint. Documented use cases would really require invoking the file picker of the relevant capture control type. Started a <a href="http://lists.w3.org/Archives/Public/public-device-apis/2012Jun/0031.html">thread</a> about this on public-device-apis@w3c.org.
+        </p>
+      </section>
+      <section>
+        <h2><code>meta</code> Elements</h2>
+        <p>
+          User agents MUST support CSS Device Adaptation [[!CSS-ADAPTATION]] as specified through a <code>meta</code>
+          viewport element.
+        </p>
+        <p class='issue'>
+          Not sure that this is clear enough, and it probably requires more than what is supported.
+        </p>
+        <p class='issue'>
+          This spec is currently <a href="http://www.w3.org/Style/CSS/current-work">marked as exploratory</a> by the CSS WG.
+        </p>
+      </section>
+      <section>
+        <h2>Application Configuration</h2>
+        <p class='issue'>
+          Although the WebApps WG is <a href="http://www.w3.org/2012/webapps/charter/Overview.html#deliverables">chartered</a> to work on this, there is no spec yet outside of Widget Packaging and Configuration [[WIDGETS]], and an <a href="https://people.mozilla.com/~anarayanan/webapps.html">early proposal</a> by Mozilla.
+        </p>
+      </section>
+    </section>
+
     <section>
       <h2>Quality of Implementation</h2>
       <p>
