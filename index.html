@@ -45,9 +45,9 @@
         them into a globally coherent view of the mobile Web platform.
       </p>
       <p>
-        This is Level 1, the second iteration, building atop Level 0 [[!COREMOB-0]]. As the platform evolves 
-        and new technologies become broadly available, additional levels, which are guaranteed to remain 
-        backwards compatible, will be layered on top of the present one.
+        This is Level 1, the first iteration. As the platform evolves 
+        and new technologies become broadly available, additional levels,
+        will be layered on top of the present one.
       </p>
     </section>
     <section class='informative'>
@@ -61,343 +61,144 @@
     </section>
     <section>
       <h2>Markup</h2>
-      <p>
-        This section describes requirements for markup languages and related features.
-      </p>
+      <p>This section describes requirements for markup languages and related features.</p>
+
       <section>
         <h2>HTML5</h2>
-        <p>
-          User agents MUST support HTML5 [[!HTML5]].
-        </p>
-        <p class='issue'>
-          Should we make conformance to the whole spec a requirement or should we break it down and require support for parts of it only?
-        </p>
-        <p class='issue'>
-          HTML5 is currently a Last Call Working Draft. Can we still make it a normative reference?
-        </p>
+        <p>User agents MUST support HTML5 [[!HTML5]].</p>
+        <p class='issue'>Should we make conformance to the whole spec a requirement or should we break it down and require support for parts of it only?</p>
+        <p class='issue'>HTML5 is currently a Last Call Working Draft. Can we still make it a normative reference?</p>
       </section>
+
       <section>
         <h2>HTML Media Capture</h2>
-        <p>
-          User agents MUST support HTML Media Capture [[!HTMLMEDIACAPTURE]].
-        </p>
+        <p>User agents MUST support HTML Media Capture [[!HTMLMEDIACAPTURE]].</p>
         <p class='note'>
-          When presented with a <code>capture</code> attribute set to <code>"camera"</code>, <code>"camcorder"</code>, or <code>"microphone"</code> User Agents are urged to invoke a file picker of a specific capture control type rather than of a generic type. E.g. when the <code>capture</code> attribute is <code>"camera"</code>, a mobile phone should let the user take a picture using the device's default camera application in fullscreen mode.
-        </p>
-        <p class='issue'>
-          HTML Media Capture is just a Working Draft at this point.
-        </p>
-        <p class='issue'>
-          The <code>capture</code> attribute is merely a hint. Documented use cases would really require invoking the file picker of the relevant capture control type. Started a <a href="http://lists.w3.org/Archives/Public/public-device-apis/2012Jun/0031.html">thread</a> about this on public-device-apis@w3c.org.
-        </p>
+          When presented with a <code>capture</code> attribute set to <code>"camera"</code>, <code>"camcorder"</code>, or <code>"microphone"</code> User Agents are urged to invoke a file picker of a specific capture control type rather than of a generic type. E.g. when the <code>capture</code> attribute is <code>"camera"</code>, a mobile phone should let the user take a picture using the device's default camera application in fullscreen mode.</p>
+        <p class='issue'>HTML Media Capture is just a Working Draft at this point.</p>
+        <p class='issue'>The <code>capture</code> attribute is merely a hint. Documented use cases would really require invoking the file picker of the relevant capture control type. Started a <a href="http://lists.w3.org/Archives/Public/public-device-apis/2012Jun/0031.html">thread</a> about this on public-device-apis@w3c.org.</p>
       </section>
+
       <section>
         <h2><code>meta</code> Elements</h2>
-        <p>
-          User agents MUST support CSS Device Adaptation [[!CSS-ADAPTATION]] as specified through a <code>meta</code>
-          viewport element.
-        </p>
-        <p class='issue'>
-          Not sure that this is clear enough, and it probably requires more than what is supported.
-        </p>
-        <p class='issue'>
-          This spec is currently <a href="http://www.w3.org/Style/CSS/current-work">marked as exploratory</a> by the CSS WG.
-        </p>
+        <p>User agents MUST support CSS Device Adaptation [[!CSS-ADAPTATION]] as specified through a <code>meta</code> viewport element.</p>
+        <p class='issue'>Not sure that this is clear enough, and it probably requires more than what is supported.</p>
+        <p class='issue'>This spec is currently <a href="http://www.w3.org/Style/CSS/current-work">marked as exploratory</a> by the CSS WG.</p>
       </section>
+
       <section>
         <h2>Application Configuration</h2>
-        <p class='issue'>
-          Although the WebApps WG is <a href="http://www.w3.org/2012/webapps/charter/Overview.html#deliverables">chartered</a> to work on this, there is no spec yet outside of Widget Packaging and Configuration [[WIDGETS]], and an <a href="https://people.mozilla.com/~anarayanan/webapps.html">early proposal</a> by Mozilla.
-        </p>
+        <p class='issue'>Although the WebApps WG is <a href="http://www.w3.org/2012/webapps/charter/Overview.html#deliverables">chartered</a> to work on this, there is no spec yet outside of Widget Packaging and Configuration [[WIDGETS]], and an <a href="https://people.mozilla.com/~anarayanan/webapps.html">early proposal</a> by Mozilla.</p>
       </section>
+
       <section>
         <h2>View Orientation</h2>
-        <p class='issue'>
-          This is a new deliverable of the WebApps WG. See the WG's
-          <a href='http://www.w3.org/2012/webapps/charter/'>charter</a> for details.
-          No spec to link to for the moment. Could also end up as an attribute of <a href="#application-configuration">Application Configuration</a>.
-        </p>
+        <p class='issue'>This is a new deliverable of the WebApps WG. See the WG's <a href='http://www.w3.org/2012/webapps/charter/'>charter</a> for details. No spec to link to for the moment. Could also end up as an attribute of <a href="#application-configuration">Application Configuration</a>.</p>
       </section>
+
       <section>
         <h2>Full-screen Mode</h2>
-        <p class='issue'>
-          Within the scope of the WebApps WG's <a href='http://www.w3.org/2012/webapps/charter/'>charter</a>. Could end up as an attribute of <a href="#application-configuration">Application Configuration</a>.
-        </p>
+        <p class='issue'>Within the scope of the WebApps WG's <a href='http://www.w3.org/2012/webapps/charter/'>charter</a>. Could end up as an attribute of <a href="#application-configuration">Application Configuration</a>.</p>
       </section>
     </section>
 
     <section>
-      <h2>Quality of Implementation</h2>
-      <p>
-        XXX
-      </p>
-      <!-- 
-        for each
-        one paragraph that explains the sort of requirement that is needed, e.g. canvas must be fast
-        enough to play a typical 2D game (the test exercises that statement)
-      -->
+      <h2>Style</h2>
+      <p>This section defines requirements for CSS and other, styling-related features.</p>
+
       <section>
-        <h2>Fast Canvas2D</h2>
-        <p>
-          XXX
-        </p>
+        <h2>Core</h2>
+        <p>User agents MUST support CSS 2.1 [[!CSS21]].</p>
+        <p>User agents MUST support CSS User Interface [[!CSS3UI]].</p>
+        <p>User agents MUST support CSS Backgrounds and Borders [[!CSS3-BG]].</p>
+        <p>User agents MUST support CSS Color [[!CSS3COLOR]].</p>
+        <p>User agents MUST support CSS Values [[!CSS3VAL]].</p>
+        <p>User agents MUST support CSS Image Values and Replaced Content [[!CSS-IMAGES]].</p>
+        <p>User agents MUST support CSS Media Queries [[!CSS3-MEDIAQUERIES]].</p>
       </section>
+
       <section>
-        <h2>Audio Mixing</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - 8 channels?
-        -->
+        <h2>Layout</h2>
+        <p>User agents MUST support CSS Flexible Box Layout [[!FLEXBOX]].</p>
+        <p>User agents MUST support CSS Multi-column Layout [[!CSS3COL]].</p>
+        <p>User agents MUST support CSS 2D Transforms [[!CSS3-2D-TRANSFORMS]].</p>
+        <p>User agents MUST support CSS 3D Transforms [[!CSS3-3D-TRANSFORMS]].</p>
       </section>
+
       <section>
-        <h2>Usable HTML Forms</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - unlike the horrible input type=date in Safari
-        -->
+        <h2>Typography</h2>
+        <p>User agents MUST support CSS Fonts [[!CSS3FONT]]. Both the TTF and OTF formats are required.</p>
+        <p>User agents MUST support <acronym title="Web Open Font Format">WOFF</acronym> [[!WOFF]].</p>
+        <p>User agents MUST support CSS Text [[!CSS3TEXT]].</p>
+        <p class='issue'>I doubt that we want all of CSS Text just yet.</p>
       </section>
+
+      <section>
+        <h2>Animations and Transitions</h2>
+        <p>User agents MUST support CSS Animations [[!CSS3-ANIMATIONS]].</p>
+        <p>User agents MUST support CSS Transitions [[!CSS3-TRANSITIONS]].</p>
+      </section>
+
+      <p class='issue'>Request for momentum scrolling (e.g. <code>-webkit-overflow-scrolling: touch</code>) are extremely common. Unfortunately, there no spec effort at this point.</p>
+    </section>
+
+    <section>
+      <h2>Scripting</h2>
+      <p>This section defines which scripting support in language and APIs are required.</p>
+
+      <section>
+        <h2>ECMAScript</h2>
+        <p>User agents MUST support ECMAScript, Edition 5.1 [[!ECMA-262-51]].</p>
+      </section>
+
+      <section>
+        <h2>DOM</h2>
+        <p>User agents MUST support the DOM4 API [[!DOM4]].</p>
+        <p>User agents MUST support the Selectors API level 2 [[!SELECTORS-API2]].</p>
+        <p>User agents SHOULD support Touch Events version 1 [[!TOUCH-EVENTS]].</p>
+      </section>
+
+      <section>
+        <h2>Storage</h2>
+        <p>User agents MUST support the Web Storage API [[!WEBSTORAGE]].</p>
+        <p>User agents MUST support the Indexed Database API [[!INDEXEDDB]].</p>
+        <p>User agents MUST support the File API [[!FILE-API]].</p>
+      </section>
+
+      <section>
+        <h2>I/O</h2>
+        <p>User agents MUST support the XMLHttpRequest API [[!XMLHTTPREQUEST]].</p>
+        <p>User agents MUST support the Progress Event API [[!PROGRESS-EVENTS]].</p>
+        <p>User agents MUST support the Web Messaging API [[!POSTMSG]].</p>
+        <p>User agents MUST support the Web Workers API [[!WEBWORKERS]].</p>
+      </section>
+
+      <section>
+        <h2>Sensors</h2>
+        <p>User agents MUST support the Geolocation API [[!GEOLOCATION-API]].</p>
+        <p>User agents MUST support the DeviceOrientation Event [[!DEVICE-ORIENTATION]].</p>
+      </section>
+
+      <section>
+        <h2>Other</h2>
+        <p>User agents MUST support the Canvas2D API [[!CANVAS-2D]].</p>
+        <p>User agents MUST support the Timing control for script-based animations API [[!ANIMATION-TIMING]].</p>
+        <p>User agents MUST support the Network Information API [[!NETINFO-API]].</p>
+        <p class='issue'><strong>At Risk:</strong> there is currently no consensus that this feature can work or be usefully defined. The relevant group (DAP) still needs to discuss it in greater depth.</p>
+      </section>
+
     </section>
     <section>
-      <h2>Features</h2>
-      <p>
-        XXX
-      </p>
-      <section>
-        <h2>Level 0</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-        -->
-      </section>
-      <section>
-        <h2>Application Cache</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - this is probably level 0, but fixed?
-        -->
-      </section>
-      <section>
-        <h2>View Orientation API</h2>
-        <section class='informative'>
-          <h3>Overview</h3>
-          <p>
-            Certain web applications might be designed to be used strictly in
-            portrait or landscape mode. This is often the case for games.
-            The View Orientation API enables the application developer to signal
-            this preference to the user agent. It is however not meant to enable
-            use cases which are better dealt with at the user agent level. For
-            example, locking the user agent in portrait mode to read while lying
-            in bed.
-          </p>
-        </section>
-        <section>
-          <h3>Conformance</h3>
-          <p class='issue'>
-            This is a new deliverable of the WebApps WG. See the WG's new 
-            <a href='http://www.w3.org/2012/webapps/charter/'>charter</a> for details.
-            There currently isn't even a draft to link to.
-          </p>
-        </section>
-      </section>
-      <section>
-        <h2>DRM</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-        -->
-      </section>
-      <section>
-        <h2>HTML Media Capture</h2>
-        <section class='informative'>
-          <h3>Overview</h3>
-          <p>
-            The main use case for camera access on mobile devices is simply… to take
-            pictures. The declarative [[!HTMLMEDIACAPTURE]] API is a perfect fit
-            for this use case.
-          </p>
-          <p>
-            As [[!HTMLMEDIACAPTURE]] relies on the security and privacy
-            protections provided by the [[HTML5]] <code>&lt;input type="file"&gt;</code>
-            and the [[FILE-API]] specifications, there is no need to prompt the user to give access to
-            the camera. Other benefits of this approach allows user agents to save
-            pictures directly to the device's photo gallery if they so wish,
-            add a physical shutter button, or provide photo editing functions
-            such as cropping, filtering, etc.
-          </p>
-          <p>
-            [[!HTMLMEDIACAPTURE]] isn't a replacement for a lower-level API
-            such as [[MEDIACAPTURE-API]] as it doesn't fulfill the same use-cases.
-            Both solutions are complementary.
-          </p>
-          <p class='note'>
-            On mobile devices, the most common use case for [[!HTMLMEDIACAPTURE]]
-            with a <code>capture</code> attribute set to <code>"camera"</code> is to
-            access the device's camera to take a picture. User agents are therefore
-            strongly encouraged to launch the system's camera application in fullscreen
-            mode directly upon activation rather than go through a two step process
-            involving a media capture picker.
-          </p>
-        </section>
-
-        <section class='normative'>
-          <h3>Conformance</h3>
-          <p>
-            User agents MUST support [[!HTMLMEDIACAPTURE]].
-          </p>
-        </section>
-
-        <section class='informative'>
-          <h2>Related APIs</h2>
-          <p>
-            Capturing pictures isn't enough. One might want to store it on the device or
-            (asynchronously) upload it to a remote server. Fully supporting camera
-            access therefore also implies supporting the following:
-          </p>
-          <ul>
-            <li><a href="#file-api">File API</a>, for access to the data returned by the system's camera application,</li>
-            <li><a href="#xmlhttprequest">XMLHttpRequest</a>, for asynchronous multipart uploads,</li>
-            <li><a href="#indexed-database-api">IndexedDB</a>, to store pictures locally, and</li>
-            <li><a href="#web-workers">Web Workers</a>, for background uploads.</li>
-          </ul>
-        </section>
-      </section>
-      <section>
-        <h2>HTML5 Forms</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - XXX
-        -->
-      </section>
-      <section>
-        <h2>File API</h2>
-        <p>
-          XXX
-        </p>
-      </section>
-      <section>
-        <h2>XMLHttpRequest</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - especially Blobs
-        -->
-      </section>
-      <section>
-        <h2>Indexed Database API</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - including Blob support
-        -->
-      </section>
-      <section>
-        <h2>overflow-scrolling: touch</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - XXX
-        -->
-      </section>
-      <section>
-        <h2>Multitouch</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - ?
-        -->
-      </section>
-      <section>
-        <h2>Web Workers</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - XXX
-        -->
-      </section>
-      <section>
-        <h2>onLine Events</h2>
-        <p>
-          XXX
-        </p>
-        <!-- 
-          - XXX
-        -->
-      </section>
-      <section>
-        <h2>Network Information</h2>
-        <p>
-          XXX
-        </p>
-        <p class='issue'>
-          <strong>At Risk:</strong> there is currently no consensus that this feature can work or be usefully
-          defined. The relevant group (DAP) still needs to discuss it in greater depth.
-        </p>
-        <!-- 
-          - see where Mozilla is with this one
-        -->
-      </section>
-      <section>
-        <h2>WOFF</h2>
-        <section class='informative'>
-          <h3>Overview</h3>
-          <p>
-            <acronym title="Web Open Font Format">WOFF</acronym> is a simple
-            compressed file format for packaging fonts. It addresses the main
-            issues which have slowed rich font adoption on the Web:
-            interoperability (WOFF is the first interoperable format with broad
-            industry adoption), licensing considerations (licensing terms can be
-            attached to the font file as metadata in WOFF), and file size (WOFF
-            uses gzip compression).
-          </p>
-        </section>
-        <section>
-          <h3>Conformance</h3>
-          <p>
-            User agents MUST support [[!WOFF]].
-          </p>
-        </section>
-        <section class='informative'>
-          <h2>Related APIs</h2>
-          <p>
-            Packaged fonts are linked to Web documents by means of the
-            <code>@font-face</code> rule specified in [[CSS3FONT]].
-          </p>
-        </section>
-      </section>
+      <h2>Network</h2>
+      <p>User agents MUST support HTTP 1.1 [[!HTTP11]].</p>
+      <p>User agents MUST support Cross-Origin Resource Sharing [[!CORS]].</p>
+      <p>User agents MUST support the <code>data:</code> URL scheme [[!RFC2397]].</p>
+      <p>User agents MUST support the <code>mailto:</code> URL scheme [[!RFC6068]].</p>
+      <p>User agents MUST support the <code>tel:</code> URL scheme [[!RFC5341]].</p>
+      <p>User agents MUST support the <code>sms:</code> URL scheme [[!RFC5724]].</p>
+      <p>User agents MUST support the <code>mmsto:</code> URL scheme.</p>
+      <p class='issue'><code>mmsto:</code> is specified by OMA. Need to find correct ref.</p>
     </section>
-    <!-- 
-      SECTIONS:
-        - animation timing
-        - blob builder
-        - File APIs
-        - CSS 3D Transforms
-        - CSS Border Image
-        - CSS FlexBox
-        - CSS Font
-        - matchMedia
-        - CSS Text (shadow)
-        - the following features must be available without vendor prefix
-          - CSS Animations
-          - CSS Background
-          - CSS Color
-          - CSS Images (Gradients)
-        - many more from RNG
-
-    -->
+  </section>
   </body>
 </html>
