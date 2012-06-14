@@ -66,8 +66,6 @@
       <section>
         <h2>HTML5</h2>
         <p>User agents MUST support HTML5 [[!HTML5]].</p>
-        <p class='issue'>Should we make conformance to the whole spec a requirement or should we break it down and require support for parts of it only?</p>
-        <p class='issue'>HTML5 is currently a Last Call Working Draft. Can we still make it a normative reference?</p>
       </section>
 
       <section>
@@ -80,10 +78,14 @@
       </section>
 
       <section>
+        <h2>SVG</h2>
+        <p>User agents MUST support Scalable Vector Graphics (SVG) 1.1 (Second Edition) [[!SVG11]].</p>
+      </section>
+
+      <section>
         <h2><code>meta</code> Elements</h2>
         <p>User agents MUST support CSS Device Adaptation [[!CSS-ADAPTATION]] as specified through a <code>meta</code> viewport element.</p>
-        <p class='issue'>Not sure that this is clear enough, and it probably requires more than what is supported.</p>
-        <p class='issue'>This spec is currently <a href="http://www.w3.org/Style/CSS/current-work">marked as exploratory</a> by the CSS WG.</p>
+        <p class='issue'>This spec is currently <a href="http://www.w3.org/Style/CSS/current-work">marked as exploratory</a> by the CSS WG. Does not seem to be too much of an issue given the meta syntax won't change.</p>
       </section>
 
       <section>
@@ -109,28 +111,29 @@
       <section>
         <h2>Core</h2>
         <p>User agents MUST support CSS 2.1 [[!CSS21]].</p>
-        <p>User agents MUST support CSS User Interface [[!CSS3UI]].</p>
         <p>User agents MUST support CSS Backgrounds and Borders [[!CSS3-BG]].</p>
         <p>User agents MUST support CSS Color [[!CSS3COLOR]].</p>
         <p>User agents MUST support CSS Values [[!CSS3VAL]].</p>
+        <p class='issue'>CSS Values is a WD. Most of the common content of CSS Values is already included in CSS 2.1. There are some features that would be welcomed additions, notably <code>calc()</code>, <code>rem</code> unit, but also some that don't seem to have a lot of traction (e.g. <code>cycle()</code>).</p>
         <p>User agents MUST support CSS Image Values and Replaced Content [[!CSS3-IMAGES]].</p>
+        <p class='issue'>CSS Image Values is a CR. Questionable content is marked at risk, which is reassuring.</p>
         <p>User agents MUST support CSS Media Queries [[!CSS3-MEDIAQUERIES]].</p>
+        <p class='issue'>Request for momentum scrolling (e.g. <code>-webkit-overflow-scrolling: touch</code>) are extremely common. Unfortunately, there is no spec effort at this point.</p>
       </section>
 
       <section>
         <h2>Layout</h2>
         <p>User agents MUST support CSS Flexible Box Layout [[!FLEXBOX]].</p>
-        <p>User agents MUST support CSS Multi-column Layout [[!CSS3COL]].</p>
-        <p>User agents MUST support CSS 2D Transforms [[!CSS3-2D-TRANSFORMS]].</p>
-        <p>User agents MUST support CSS 3D Transforms [[!CSS3-3D-TRANSFORMS]].</p>
+        <p class='issue'>Flexbox is a WD, it was re-written from the ground-up <em>after</em> Mozilla's initial implementation. Unsure about the position of implementors outside of WebKit.</p>
+        <p>User agents MUST support CSS Transforms [[!CSS3-TRANSFORMS]].</p>
       </section>
 
       <section>
         <h2>Typography</h2>
-        <p>User agents MUST support CSS Fonts [[!CSS3FONT]]. Both the TTF and OTF formats are required.</p>
+        <p>User agents MUST support CSS Fonts [[!CSS3-FONTS]].</p>
         <p>User agents MUST support <acronym title="Web Open Font Format">WOFF</acronym> [[!WOFF]].</p>
         <p>User agents MUST support CSS Text [[!CSS3TEXT]].</p>
-        <p class='issue'>I doubt that we want all of CSS Text just yet.</p>
+        <p class='issue'>Spec in WD. We're interested in a small subset of CSS Text, mainly text-shadow. Like CSS Values, a lot what is of interest is already covered by CSS 2.1.</p>
       </section>
 
       <section>
@@ -138,8 +141,6 @@
         <p>User agents MUST support CSS Animations [[!CSS3-ANIMATIONS]].</p>
         <p>User agents MUST support CSS Transitions [[!CSS3-TRANSITIONS]].</p>
       </section>
-
-      <p class='issue'>Request for momentum scrolling (e.g. <code>-webkit-overflow-scrolling: touch</code>) are extremely common. Unfortunately, there no spec effort at this point.</p>
     </section>
 
     <section>
@@ -156,6 +157,7 @@
         <p>User agents MUST support the DOM4 API [[!DOM4]].</p>
         <p>User agents MUST support the Selectors API level 2 [[!SELECTORS-API2]].</p>
         <p>User agents SHOULD support Touch Events version 1 [[!TOUCH-EVENTS]].</p>
+        <p>User agents MUST support CSSOM View [[!CSSOM-VIEW]].</p>
       </section>
 
       <section>
@@ -166,11 +168,12 @@
       </section>
 
       <section>
-        <h2>I/O</h2>
+        <h2>Networking</h2>
         <p>User agents MUST support the XMLHttpRequest API [[!XMLHTTPREQUEST]].</p>
-        <p>User agents MUST support the Progress Event API [[!PROGRESS-EVENTS]].</p>
+        <p class='issue'>The Editor folded level 1 and 2 in the same spec recently, but this isn't reflected in /TR yet.</p>
         <p>User agents MUST support the Web Messaging API [[!POSTMSG]].</p>
         <p>User agents MUST support the Web Workers API [[!WEBWORKERS]].</p>
+        <p class='issue'>Do we need both Shared and Web Workers?</p>
       </section>
 
       <section>
@@ -180,11 +183,9 @@
       </section>
 
       <section>
-        <h2>Other</h2>
+        <h2>Multimedia</h2>
         <p>User agents MUST support the Canvas2D API [[!CANVAS-2D]].</p>
         <p>User agents MUST support the Timing control for script-based animations API [[!ANIMATION-TIMING]].</p>
-        <p>User agents MUST support the Network Information API [[!NETINFO-API]].</p>
-        <p class='issue'><strong>At Risk:</strong> there is currently no consensus that this feature can work or be usefully defined. The relevant group (DAP) still needs to discuss it in greater depth.</p>
       </section>
 
     </section>
