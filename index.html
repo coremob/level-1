@@ -67,6 +67,8 @@
       <section>
         <h2>HTML5</h2>
         <p>User agents MUST support HTML5 [[!HTML5]].</p>
+        <p class='note'>Implementors should pay particular attention to the quality of implementation of the <code>audio</code> element. <code>audio</code> elements are commonly used in games to play background music and sound effects. It is recommended that implementations support playing 8 audio files in parallel without audible artifacts and provide sub 10ms latency.</p>
+        <p class='issue'>Can the latency requirements be lightened a bit. Sub 10ms seems ideal, slightly longer latency times may be acceptable for most use cases.</p>
       </section>
 
       <section>
@@ -186,6 +188,7 @@
       <section>
         <h2>Multimedia</h2>
         <p>User agents MUST support the Canvas2D API [[!CANVAS-2D]].</p>
+        <p class='note'>Implementors should pay attention to the performance characteristics of the <code>canvas</code> element which is particularly well suited for the development of 2D and isometric games. In order to meet the expectations of users, implementations should be capable of running such games at 30fps in full-screen mode.</p>
         <p>User agents MUST support the Timing control for script-based animations API [[!ANIMATION-TIMING]].</p>
       </section>
 
