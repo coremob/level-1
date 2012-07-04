@@ -102,11 +102,26 @@
       <p>This section defines requirements for CSS and other, styling-related features.</p>
 
       <section>
-        <h2>Core</h2>
+        <h2>CSS 2.1</h2>
+        <p>User agents MUST support CSS 2.1 [[!CSS21]].</p>
+      </section>
+
+      <section>
+        <h2>Processing</h2>
         <section>
-          <h2>CSS 2.1</h2>
-          <p>User agents MUST support CSS 2.1 [[!CSS21]].</p>
+          <h2>Values</h2>
+          <p>User agents MUST support CSS Values [[!CSS3VAL]].</p>
+          <p class='issue'>CSS Values is a WD. Most of the common content of CSS Values is already included in CSS 2.1. There are some features that would be welcomed additions, notably <code>calc()</code>, <code>rem</code> unit, but also some that don't seem to have a lot of traction (e.g. <code>cycle()</code>).</p>
         </section>
+        <section>
+          <h2>Media Queries</h2>
+          <p>User agents MUST support CSS Media Queries [[!CSS3-MEDIAQUERIES]].</p>
+        </section>
+        <p class='issue'>Request for momentum scrolling (e.g. <code>-webkit-overflow-scrolling: touch</code>) are extremely common. Unfortunately, there is no spec effort at this point.</p>
+      </section>
+
+      <section>
+        <h2>Graphical</h2>
         <section>
           <h2>Backgrounds and Borders</h2>
           <p>User agents MUST support CSS Backgrounds and Borders [[!CSS3-BG]].</p>
@@ -116,20 +131,10 @@
           <p>User agents MUST support CSS Color [[!CSS3COLOR]].</p>
         </section>
         <section>
-          <h2>Values</h2>
-          <p>User agents MUST support CSS Values [[!CSS3VAL]].</p>
-          <p class='issue'>CSS Values is a WD. Most of the common content of CSS Values is already included in CSS 2.1. There are some features that would be welcomed additions, notably <code>calc()</code>, <code>rem</code> unit, but also some that don't seem to have a lot of traction (e.g. <code>cycle()</code>).</p>
-        </section>
-        <section>
           <h2>Image Values and Replaced Content</h2>
           <p>User agents MUST support CSS Image Values and Replaced Content [[!CSS3-IMAGES]].</p>
           <p class='issue'>CSS Image Values is a CR. Questionable content is marked at risk, which is reassuring.</p>
         </section>
-        <section>
-          <h2>Media Queries</h2>
-          <p>User agents MUST support CSS Media Queries [[!CSS3-MEDIAQUERIES]].</p>
-        </section>
-        <p class='issue'>Request for momentum scrolling (e.g. <code>-webkit-overflow-scrolling: touch</code>) are extremely common. Unfortunately, there is no spec effort at this point.</p>
       </section>
 
       <section>
