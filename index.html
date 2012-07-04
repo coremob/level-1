@@ -103,35 +103,74 @@
 
       <section>
         <h2>Core</h2>
-        <p>User agents MUST support CSS 2.1 [[!CSS21]].</p>
-        <p>User agents MUST support CSS Backgrounds and Borders [[!CSS3-BG]].</p>
-        <p>User agents MUST support CSS Color [[!CSS3COLOR]].</p>
-        <p>User agents MUST support CSS Values [[!CSS3VAL]].</p>
-        <p class='issue'>CSS Values is a WD. Most of the common content of CSS Values is already included in CSS 2.1. There are some features that would be welcomed additions, notably <code>calc()</code>, <code>rem</code> unit, but also some that don't seem to have a lot of traction (e.g. <code>cycle()</code>).</p>
-        <p>User agents MUST support CSS Image Values and Replaced Content [[!CSS3-IMAGES]].</p>
-        <p class='issue'>CSS Image Values is a CR. Questionable content is marked at risk, which is reassuring.</p>
-        <p>User agents MUST support CSS Media Queries [[!CSS3-MEDIAQUERIES]].</p>
+        <section>
+          <h2>CSS 2.1</h2>
+          <p>User agents MUST support CSS 2.1 [[!CSS21]].</p>
+        </section>
+        <section>
+          <h2>Backgrounds and Borders</h2>
+          <p>User agents MUST support CSS Backgrounds and Borders [[!CSS3-BG]].</p>
+        </section>
+        <section>
+          <h2>Color</h2>
+          <p>User agents MUST support CSS Color [[!CSS3COLOR]].</p>
+        </section>
+        <section>
+          <h2>Values</h2>
+          <p>User agents MUST support CSS Values [[!CSS3VAL]].</p>
+          <p class='issue'>CSS Values is a WD. Most of the common content of CSS Values is already included in CSS 2.1. There are some features that would be welcomed additions, notably <code>calc()</code>, <code>rem</code> unit, but also some that don't seem to have a lot of traction (e.g. <code>cycle()</code>).</p>
+        </section>
+        <section>
+          <h2>Image Values and Replaced Content</h2>
+          <p>User agents MUST support CSS Image Values and Replaced Content [[!CSS3-IMAGES]].</p>
+          <p class='issue'>CSS Image Values is a CR. Questionable content is marked at risk, which is reassuring.</p>
+        </section>
+        <section>
+          <h2>Media Queries</h2>
+          <p>User agents MUST support CSS Media Queries [[!CSS3-MEDIAQUERIES]].</p>
+        </section>
         <p class='issue'>Request for momentum scrolling (e.g. <code>-webkit-overflow-scrolling: touch</code>) are extremely common. Unfortunately, there is no spec effort at this point.</p>
       </section>
 
       <section>
         <h2>Layout</h2>
-        <p>User agents MUST support CSS Flexible Box Layout [[!FLEXBOX]].</p>
-        <p>User agents MUST support CSS Transforms [[!CSS3-TRANSFORMS]].</p>
+        <section>
+          <h2>Flexbox</h2>
+          <p>User agents MUST support CSS Flexible Box Layout [[!FLEXBOX]].</p>
+        </section>
+        <section>
+          <h2>Transforms</h2>
+          <p>User agents MUST support CSS Transforms [[!CSS3-TRANSFORMS]].</p>
+        </section>
       </section>
 
       <section>
         <h2>Typography</h2>
-        <p>User agents MUST support CSS Fonts [[!CSS3-FONTS]].</p>
-        <p>User agents MUST support <acronym title="Web Open Font Format">WOFF</acronym> [[!WOFF]].</p>
-        <p>User agents MUST support CSS Text [[!CSS3TEXT]].</p>
-        <p class='issue'>Spec in WD. We're interested in a small subset of CSS Text, mainly text-shadow. Like CSS Values, a lot what is of interest is already covered by CSS 2.1.</p>
+        <section>
+          <h2>CSS Fonts</h2>
+          <p>User agents MUST support CSS Fonts [[!CSS3-FONTS]].</p>
+        </section>
+        <section>
+          <h2>WOFF</h2>
+          <p>User agents MUST support <acronym title="Web Open Font Format">WOFF</acronym> [[!WOFF]].</p>
+        </section>
+        <section>
+          <h2>CSS Text</h2>
+          <p>User agents MUST support CSS Text [[!CSS3TEXT]].</p>
+          <p class='issue'>Spec in WD. We're interested in a small subset of CSS Text, mainly text-shadow. Like CSS Values, a lot what is of interest is already covered by CSS 2.1.</p>
+        </section>
       </section>
 
       <section>
         <h2>Animations and Transitions</h2>
-        <p>User agents MUST support CSS Animations [[!CSS3-ANIMATIONS]].</p>
-        <p>User agents MUST support CSS Transitions [[!CSS3-TRANSITIONS]].</p>
+        <section>
+          <h2>Animations</h2>
+          <p>User agents MUST support CSS Animations [[!CSS3-ANIMATIONS]].</p>
+        </section>
+        <section>
+          <h2>Transitions</h2>
+          <p>User agents MUST support CSS Transitions [[!CSS3-TRANSITIONS]].</p>
+        </section>
       </section>
     </section>
 
@@ -146,52 +185,115 @@
 
       <section>
         <h2>DOM</h2>
-        <p>User agents MUST support the DOM4 API [[!DOM4]].</p>
-        <p>User agents MUST support the Selectors API level 2 [[!SELECTORS-API2]].</p>
-        <p>User agents SHOULD support Touch Events version 1 [[!TOUCH-EVENTS]].</p>
-        <p>User agents MUST support CSSOM View [[!CSSOM-VIEW]].</p>
+        <section>
+          <h2>DOM4</h2>
+          <p>User agents MUST support the DOM4 API [[!DOM4]].</p>
+        </section>
+        <section>
+          <h2>Selectors</h2>
+          <p>User agents MUST support the Selectors API level 2 [[!SELECTORS-API2]].</p>
+        </section>
+        <section>
+          <h2>Touch Events</h2>
+          <p>User agents SHOULD support Touch Events version 1 [[!TOUCH-EVENTS]].</p>
+        </section>
+        <section>
+          <h2>CSSOM View</h2>
+          <p>User agents MUST support CSSOM View [[!CSSOM-VIEW]].</p>
+        </section>
       </section>
 
       <section>
         <h2>Storage</h2>
-        <p>User agents MUST support the Web Storage API [[!WEBSTORAGE]].</p>
-        <p>User agents MUST support the Indexed Database API [[!INDEXEDDB]].</p>
-        <p>User agents MUST support the File API [[!FILE-API]].</p>
+        <section>
+          <h2>Web Storage</h2>
+          <p>User agents MUST support the Web Storage API [[!WEBSTORAGE]].</p>
+        </section>
+        <section>
+          <h2>Indexed Database</h2>
+          <p>User agents MUST support the Indexed Database API [[!INDEXEDDB]].</p>
+        </section>
+        <section>
+          <h2>File</h2>
+          <p>User agents MUST support the File API [[!FILE-API]].</p>
+        </section>
       </section>
 
       <section>
         <h2>Networking</h2>
-        <p>User agents MUST support the XMLHttpRequest API [[!XMLHTTPREQUEST]].</p>
-        <p class='issue'>The Editor folded level 1 and 2 in the same spec recently, but this isn't reflected in /TR yet.</p>
-        <p>User agents MUST support the Web Messaging API [[!POSTMSG]].</p>
-        <p>User agents MUST support the Web Workers API [[!WEBWORKERS]].</p>
-        <p class='issue'>Do we need both Shared and Web Workers?</p>
+        <section>
+          <h2>XMLHttpRequest</h2>
+          <p>User agents MUST support the XMLHttpRequest API [[!XMLHTTPREQUEST]].</p>
+          <p class='issue'>The Editor folded level 1 and 2 in the same spec recently, but this isn't reflected in /TR yet.</p>
+        </section>
+        <section>
+          <h2>Web Messaging</h2>
+          <p>User agents MUST support the Web Messaging API [[!POSTMSG]].</p>
+        </section>
+        <section>
+          <h2>Web Workers</h2>
+          <p>User agents MUST support the Web Workers API [[!WEBWORKERS]].</p>
+          <p class='issue'>Do we need both Shared and Web Workers?</p>
+        </section>
       </section>
 
       <section>
         <h2>Sensors</h2>
-        <p>User agents MUST support the Geolocation API [[!GEOLOCATION-API]].</p>
-        <p>User agents MUST support the DeviceOrientation Event [[!DEVICE-ORIENTATION]].</p>
+        <section>
+          <h2>Geolocation</h2>
+          <p>User agents MUST support the Geolocation API [[!GEOLOCATION-API]].</p>
+        </section>
+        <section>
+          <h2>DeviceOrientation Event</h2>
+          <p>User agents MUST support the DeviceOrientation Event [[!DEVICE-ORIENTATION]].</p>
+        </section>
       </section>
 
       <section>
         <h2>Multimedia</h2>
-        <p>User agents MUST support the Canvas2D API [[!CANVAS-2D]].</p>
-        <p class='note'>Implementors should pay attention to the performance characteristics of the <code>canvas</code> element which is particularly well suited for the development of 2D and isometric games. In order to meet the expectations of users, implementations should be capable of running such games at 30fps in full-screen mode.</p>
-        <p>User agents MUST support the Timing control for script-based animations API [[!ANIMATION-TIMING]].</p>
+        <section>
+          <h2>Canvas2D</h2>
+          <p>User agents MUST support the Canvas2D API [[!CANVAS-2D]].</p>
+          <p class='note'>Implementors should pay attention to the performance characteristics of the <code>canvas</code> element which is particularly well suited for the development of 2D and isometric games. In order to meet the expectations of users, implementations should be capable of running such games at 30fps in full-screen mode.</p>
+        </section>
+        <section>
+          <h2>Timing control for script-based animations</h2>
+          <p>User agents MUST support the Timing control for script-based animations API [[!ANIMATION-TIMING]].</p>
+        </section>
       </section>
 
     </section>
     <section>
       <h2>Network</h2>
-      <p>User agents MUST support HTTP 1.1 [[!HTTP11]].</p>
-      <p>User agents MUST support Cross-Origin Resource Sharing [[!CORS]].</p>
-      <p>User agents MUST support the <code>data:</code> URI scheme [[!RFC2397]].</p>
-      <p>User agents MUST support the <code>mailto:</code> URI scheme [[!RFC6068]].</p>
-      <p>User agents MUST support the <code>tel:</code> URI scheme [[!RFC3966]].</p>
-      <p>User agents MUST support the <code>sms:</code> URI scheme [[!RFC5724]].</p>
-      <p>User agents MUST support the <code>mmsto:</code> URI scheme.</p>
-      <p class='issue'><code>mmsto:</code> is specified by OMA. Need to find correct ref.</p>
+      <section>
+        <h2>HTTP</h2>
+        <p>User agents MUST support HTTP 1.1 [[!HTTP11]].</p>
+      </section>
+      <section>
+        <h2>CORS</h2>
+        <p>User agents MUST support Cross-Origin Resource Sharing [[!CORS]].</p>
+      </section>
+      <section>
+        <h2><code>data:</code> scheme</h2>
+        <p>User agents MUST support the <code>data:</code> URI scheme [[!RFC2397]].</p>
+      </section>
+      <section>
+        <h2><code>mailto:</code> scheme</h2>
+        <p>User agents MUST support the <code>mailto:</code> URI scheme [[!RFC6068]].</p>
+      </section>
+      <section>
+        <h2><code>tel:</code> scheme</h2>
+        <p>User agents MUST support the <code>tel:</code> URI scheme [[!RFC3966]].</p>
+      </section>
+      <section>
+        <h2><code>sms:</code> scheme</h2>
+        <p>User agents MUST support the <code>sms:</code> URI scheme [[!RFC5724]].</p>
+      </section>
+      <section>
+        <h2><code>mmsto:</code> scheme</h2>
+        <p>User agents MUST support the <code>mmsto:</code> URI scheme.</p>
+        <p class='issue'><code>mmsto:</code> is specified by OMA. Need to find correct ref.</p>
+      </section>
     </section>
   </section>
   </body>
