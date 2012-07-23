@@ -61,9 +61,9 @@
       <section>
         <h2>HTML5</h2>
         <p>User agents MUST support HTML5 [[!HTML5]].</p>
-        <p class='issue'>Some <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14702">critical AppCache issues</a> are being <a href="http://html5.org/tools/web-apps-tracker?from=7135&amp;to=7136">fixed</a> in the HTML Living Standard spec. Unfortunately, these fixes aren't brought (yet) to the HTML5 spec because they are considered new features belonging in HTML.next. What should the group's position be with regards to that?</p>
+        <p class='issue' data-number=1>Some <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=14702">critical AppCache issues</a> are being <a href="http://html5.org/tools/web-apps-tracker?from=7135&amp;to=7136">fixed</a> in the HTML Living Standard spec. Unfortunately, these fixes aren't brought (yet) to the HTML5 spec because they are considered new features belonging in HTML.next. What should the group's position be with regards to that?</p>
         <p class='note'>Implementors should pay particular attention to the quality of implementation of the <code>audio</code> element. <code>audio</code> elements are commonly used in games to play background music and sound effects. It is recommended that implementations support playing 8 audio files in parallel without audible artifacts and provide sub 10ms latency.</p>
-        <p class='issue'>Can the latency requirements be lightened a bit. Sub 10ms seems ideal, slightly longer latency times may be acceptable for most use cases.</p>
+        <p class='issue' data-number=2>Can the latency requirements be lightened a bit. Sub 10ms seems ideal, slightly longer latency times may be acceptable for most use cases.</p>
       </section>
 
       <section>
@@ -83,17 +83,17 @@
 
       <section>
         <h2>Application Configuration</h2>
-        <p class='issue'>WebApps WG is <a href="http://www.w3.org/2012/webapps/charter/Overview.html#deliverables">chartered</a> to work on this and has two related specs: Widget Packaging and Configuration [[WIDGETS]] (which has had little traction among the main vendors), and Web Application Manifest Format and Management APIs [[WEBAPPS-MANIFEST-API]] (which is still an early Editor's draft).</p>
+        <p class='issue' data-number=6>WebApps WG is <a href="http://www.w3.org/2012/webapps/charter/Overview.html#deliverables">chartered</a> to work on this and has two related specs: Widget Packaging and Configuration [[WIDGETS]] (which has had little traction among the main vendors), and Web Application Manifest Format and Management APIs [[WEBAPPS-MANIFEST-API]] (which is still an early Editor's draft).</p>
       </section>
 
       <section>
         <h2>View Orientation</h2>
-        <p class='issue'>This is a new deliverable of the WebApps WG. See the WG's <a href='http://www.w3.org/2012/webapps/charter/'>charter</a> for details. No spec to link to for the moment. Could also end up as an attribute of <a href="#application-configuration">Application Configuration</a>.</p>
+        <p class='issue' data-number=7>This is a new deliverable of the WebApps WG. See the WG's <a href='http://www.w3.org/2012/webapps/charter/'>charter</a> for details. No spec to link to for the moment. Could also end up as an attribute of <a href="#application-configuration">Application Configuration</a>.</p>
       </section>
 
       <section>
         <h2>Chromeless Mode</h2>
-        <p class='issue'>Within the scope of the WebApps WG's <a href='http://www.w3.org/2012/webapps/charter/'>charter</a>. Could end up as an attribute of <a href="#application-configuration">Application Configuration</a>.</p>
+        <p class='issue' data-number=8>Within the scope of the WebApps WG's <a href='http://www.w3.org/2012/webapps/charter/'>charter</a>. Could end up as an attribute of <a href="#application-configuration">Application Configuration</a>.</p>
       </section>
     </section>
 
@@ -111,7 +111,7 @@
         <section>
           <h2>Values</h2>
           <p>User agents MUST support CSS Values [[!CSS3VAL]].</p>
-          <p class='issue'>CSS Values is a WD. Most of the common content of CSS Values is already included in CSS 2.1. There are some features that would be welcomed additions, notably <code>calc()</code>, <code>rem</code> unit, but also some that don't seem to have a lot of traction (e.g. <code>cycle()</code>).</p>
+          <p class='issue' data-number=9>CSS Values is a WD. Most of the common content of CSS Values is already included in CSS 2.1. There are some features that would be welcomed additions, notably <code>calc()</code>, <code>rem</code> unit, but also some that don't seem to have a lot of traction (e.g. <code>cycle()</code>).</p>
         </section>
         <section>
           <h2>Media Queries</h2>
@@ -121,7 +121,7 @@
           <h2>Selectors</h2>
           <p>User agents MUST support CSS Selectors Level 3 [[!SELECTORS]].</p>
         </section>
-        <p class='issue'>Request for momentum scrolling (e.g. <code>-webkit-overflow-scrolling: touch</code>) are extremely common. Unfortunately, there is no spec effort at this point.</p>
+        <p class='issue' data-number=11>Request for momentum scrolling (e.g. <code>-webkit-overflow-scrolling: touch</code>) are extremely common. Unfortunately, there is no spec effort at this point.</p>
       </section>
 
       <section>
@@ -137,7 +137,7 @@
         <section>
           <h2>Image Values and Replaced Content</h2>
           <p>User agents MUST support CSS Image Values and Replaced Content [[!CSS3-IMAGES]].</p>
-          <p class='issue'>CSS Image Values is a CR. Questionable content is marked at risk, which is reassuring.</p>
+          <p class='issue' data-number=10>CSS Image Values is a CR. Questionable content is marked at risk, which is reassuring.</p>
         </section>
       </section>
 
@@ -166,7 +166,7 @@
         <section>
           <h2>CSS Text</h2>
           <p>User agents MUST support CSS Text [[!CSS3TEXT]].</p>
-          <p class='issue'>Spec in WD. We're interested in a small subset of CSS Text, mainly text-shadow. Like CSS Values, a lot what is of interest is already covered by CSS 2.1.</p>
+          <p class='issue' data-number=13>Spec in WD. We're interested in a small subset of CSS Text, mainly text-shadow. Like CSS Values, a lot what is of interest is already covered by CSS 2.1.</p>
         </section>
       </section>
 
@@ -237,7 +237,7 @@
         <section>
           <h2>XMLHttpRequest</h2>
           <p>User agents MUST support the XMLHttpRequest API [[!XMLHTTPREQUEST]].</p>
-          <p class='issue'>The Editor folded level 1 and 2 in the same spec recently, but this isn't reflected in /TR yet.</p>
+          <p class='issue' data-number=14>The Editor folded level 1 and 2 in the same spec recently, but this isn't reflected in /TR yet.</p>
         </section>
         <section>
           <h2>Web Messaging</h2>
@@ -246,7 +246,7 @@
         <section>
           <h2>Web Workers</h2>
           <p>User agents MUST support the Web Workers API [[!WEBWORKERS]].</p>
-          <p class='issue'>Do we need both Shared and Web Workers?</p>
+          <p class='issue' data-number=15>Do we need both Shared and Web Workers?</p>
         </section>
       </section>
 
